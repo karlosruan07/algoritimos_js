@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exeer001</title>
+
+    <style>
+        body{
+            background:darkviolet;
+            font: normal 15pt arial;
+        }
+        p{
+            font: normal 13pt arial;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Estudos de DOM</h1>
+    <p> 1ª TAG do p -- Aqui vai o resultado ! </p>
+    <p>2ª TAG do P, Aprendendo a usar o <strong>Dom</strong> no JS </p>
+    <div id="msg">Clique em MIM !</div>
+    
+    
+    
+    <script>
+        window.document.write('=-=-==-=-==-=-==-=-==-=-==-=-=<br>')
+        var textoP = window.document.getElementsByTagName('p')[0] //Acessa o 1 endereço da tap p
+        var textop2 = window.document.getElementsByTagName('p')[1]
+        var textoMSG = window.document.getElementById('msg') //quarda o id na variavel
+        var textomsg2 = window.document.getElementsByName('msg2')
+
+        var corpoFundo = window.document.body //Armazena na variavel o corpo do site
+        window.document.writeln('Na primeira tag de P está escrito '+ textoP.innerText) //Armazena o texto P [0] já com as formatações
+        window.document.writeln('<br>');
+        window.document.writeln('Na segunda tag de P está escrito '+ textop2.innerText) //Armazena o texto que está na tag P [1]
+        textoMSG.style.background = 'green'
+        
+
+        corpoFundo.style.background = 'rose'
+        textoMSG.innerHTML = 'Texto Modificado !' //Dá de alterar o texto
+        
+        
+        
+
+        window.document.write('<br>=-=-==-=-==-=-==-=-==-=-==-=-=<br>')
+
+        window.document.writeln('Olá, Mundo !<br>')
+        window.document.writeln(window.document.charset)
+        window.document.writeln('<br>')
+        window.document.write(navigator.appName)
+        window.document.writeln('<br>')
+        window.document.write('Você está acessando a url ' + window.document.URL)
+    </script>
+
+</body>
+</html>

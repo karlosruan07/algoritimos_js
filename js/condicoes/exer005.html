@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5">
+    
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <style>
+        body{
+            background: blueviolet;
+        }
+
+        div#x{
+            padding: 6px;
+            margin: 40px;
+            border: black solid;
+            margin-top: 180px;
+            background: seagreen;
+            color: seashell;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    
+    
+
+    <div class="row">
+        <div class="col s12 m6 push-m3">
+            <div id="x">
+                <h3>Horário Atual</h3>
+
+                <script>
+                    var hora = new Date
+                    var horaAtual = `${hora.getHours()}:${hora.getMinutes()}:${hora.getSeconds()}`
+                    
+                    window.document.writeln(`A hora do sistema atualmente é ${horaAtual}`)
+                </script>
+
+            </div>
+
+            
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

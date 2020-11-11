@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 001</title>
+</head>
+<body>
+    <h1>Olá mundo !</h1>
+    <h2>Aula 002</h2>
+    <p>Já me livrei da maldição ! </p>
+
+    <style>
+        body{
+            background-color: chocolate;
+            
+            
+        }
+
+        h1{
+            color: blue;
+            font: normal 15pt Arial;  /* Isso é um cometário em css  */
+        }
+
+        p{
+            color: chartreuse;
+        }
+
+    </style>
+
+    <script>
+        //window.alert('Estou aprendendo JS ! ')
+       // var nome = window.prompt('Qual é o seu nome ? ')
+        //window.alert('É um prazer conhecer você, ' + nome) //Para concatenar em JS usamos o sinal de adição
+
+        var valor = Number(window.prompt('Digite um valor com casas decimais : '))
+        document.writeln(`O valor formatado ficará ${valor.toFixed(2)}<br>`) // usamos o método toFixed(2) para formatar para dus casas decimais
+        document.writeln(`O valor mudando os pontos por virgulas será ${valor.toFixed(2).replace('.',',')}<br>`) //Serve para mudar os pontos por vígula
+        document.writeln(`O valor convertido para Real é ${valor.toLocaleString('pt-BR',{style: 'currency', currency: 'USD'})}`) //coloca o simbolo de dollar ou moeda desejada
+
+
+
+    </script>
+
+    
+
+
+</body>
+</html>

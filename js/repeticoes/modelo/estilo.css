@@ -1,0 +1,21 @@
+body{
+    background: blueviolet;
+    font: normal 15pt Arial;
+}
+header{
+    color: white;
+    text-align: center; /*Centraliza o conteúdo*/
+}
+section{
+    background: white;
+    border-radius: 10px; /*Arredonda as laterais*/
+    padding: 15px;/*Alarga as laterais*/
+    width: 500px; /*500 px das laterias da pagina*/
+    margin: auto; /*Centraliza o conteudo*/
+    box-shadow: 5px 5px 5px rgb(112, 44, 44); /*Aqui coloca uma sobra*/
+}
+footer{
+    color: white;
+    text-align: center;
+
+}

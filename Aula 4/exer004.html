@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font: normal 20pt arial ;
+    }
+</style>
+<body>
+    <script>
+        var nome = String(prompt('Digite seu nome : '))
+        document.writeln(`É um prazer conhecer você ${nome} seu nome tem ${nome.length} !<br>`) //para usar html no JS colocamos antes de fechar a crase
+        document.writeln(`Seu nome em letras MAIÚSCULAS é ${nome.toUpperCase()}<br>`) //não esquecer dos parentes dos métodos
+        document.writeln(`Seu nome em letras minusculas é ${nome.toLowerCase()}<br>`)
+    </script>
+</body>
+</html>

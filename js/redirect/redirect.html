@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    var btn = document.getElementById("btn");
+    btn.addEventListener("click", function(){
+
+        var req = new XMLHttpRequest();
+        var jsObj = {nome: "Test"};
+        var sendData = JSON.stringfy(jsObj);
+
+        req.open('POST', 'localhost', true);
+
+        req.onreadystatechange = function () {
+            if (req.readyState != 4) return; //Ignora o resto enquanto readyState é diferente de 4 (4 = completo)
+
+            if (req.status == 200) { //Resposta http padrão do PHP, afirma que esta tudo ok
+                alert(req.responseText);//Exibe a resposta HTTP
+            } else {
+                alert("Erro HTTP ou conexão: " + req.status);//Exibe o código de erro HTTP ou um código de erro como "0" ou um outro numer (geralmente em IE) sobre problemas de conexão
+            }
+        };
+
+        req.send(sendData);
+    });
+});
+</script>
+</head>
+<body>
+
+<button id="btn">Send an HTTP POST request to a page and get the result back</button>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>PROGRAMA DE REDIRECIONAMENTO !</h1>
+    </header>
+    <section>
+        
+        <div>
+            Usuário: 
+            <input type="text" name="user" id="user"><br><br>
+            Senha: 
+            <input type="password" name="senha" id="senha"><br><br>
+
+            <input type="button" value="Enviar" name="login" id="login" onclick ="carregar()">
+        </div>
+
+        
+
+    </section>
+
+    <footer>
+
+        
+
+        <br>
+        <div id="rodape1">
+            <h1>rodapé1</h1>
+        </div>
+        <div id="rodape2">
+            <h1>
+                rodapé2
+            </h1>
+        </div>
+    </footer>
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
+
+-->

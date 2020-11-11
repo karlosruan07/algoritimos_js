@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="num1" id="num1">
+    <input type="number" name="num2" id="num2">
+    <input type="button" value="somar" onclick="somar()">
+    <input type="button" value="subtrair" onclick="subtrair()">
+    <input type="button" value="multiplicar" onclick="multiplicar()">
+    <input type="button" value="divisao" onclick="divisao()">
+
+    <div id="res">Resultado</div>
+
+    <!--Pegar os dados-->
+
+    <script>
+        var numero1 = window.document.getElementById('num1')
+        var numero2 = window.document.getElementById('num2')
+        var resul = window.document.getElementById('res')
+        function somar() {
+
+       
+        //tratamento dos dados !
+        var tratanum1 = Number(numero1.value)
+        var tratarnum2 = Number(numero2.value)
+
+        var resultado = tratanum1 + tratarnum2
+        
+        resul.innerHTML = resultado
+        }
+
+        function subtrair() {
+            var tratanum1 = Number(numero1.value)
+            var tratarnum2 = Number(numero2.value)
+            var resultado = tratanum1 - tratarnum2
+            //window.document.writeln(`A subtração é ${resul.innerHTML = resultado}.`)
+            resul.innerHTML = resultado
+        }
+
+        function multiplicar() {
+            var tratanum1 = Number(numero1.value)
+            var tratarnum2 = Number(numero2.value)
+            var resultado = tratanum1 * tratarnum2
+            resul.innerHTML = resultado
+        }
+
+        function divisao() {
+            var tratanum1 = Number(numero1.value)
+            var tratarnum2 = Number(numero2.value)
+            var resultado = tratanum1 / tratarnum2
+            resul.innerHTML = resultado
+        }
+
+
+    </script>
+
+
+</body>
+</html>

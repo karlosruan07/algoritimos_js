@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer Dom</title>
+    <style>
+        div#area{
+            font: normal 20pt Arial;
+            background: darkseagreen;
+            color: black;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            
+        }
+
+    </style>
+</head>
+<body>
+
+        <!--<div id="area" onclick="clicar()" onmousemove="movendo()" onmouseout="saindo()"> -->
+        <div id="area">
+            interaja ...
+        </div>
+
+    <script>
+        var area = window.document.getElementById("area") //Aqui é uma variável global
+        area.addEventListener('click', clicar)
+        area.addEventListener('mousemove', movendo)
+        area.addEventListener('mouseout', saindo)
+        function clicar(){
+            //var area = window.document.getElementById('area')
+            area.innerText = 'Clicou !'
+            area.style.background = 'red'
+        }
+
+        function movendo() {
+            area.innerText = 'Movendo !'
+            area.style.background = 'yellow'
+        }
+
+        function saindo() {
+            area.innerText = 'Saiu !'
+            area.style.background = 'green'
+        }
+
+    </script>
+
+</body>
+</html>

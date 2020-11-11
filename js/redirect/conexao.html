@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="res">
+        <h1>Resultado.</h1>
+    </div>
+
+    <input type="button" value="Clique aqui" onclick="carregar()">>
+
+    <script>
+        var res = document.getElementById('res')
+        var resultado = String(res)
+
+
+
+function carregar() {
+    
+
+const Sequelize = require('sequelize')
+const sequelize = new Sequelize('teste', 'root','',{
+    host: "localhost",
+    dialect: 'mysql'
+})
+
+sequelize.authenticate().then(function(){
+
+    //console.log("Conectado com Sucesso")
+    res.innerHTML = "Conectado com sucesso."
+}).catch(function(erro){
+    //console.log("Falha ao se conectar !"+erro)
+    window.document.write('Falha ao se conectar'+erro)
+})
+
+}
+</script>
+
+</body>
+</html>

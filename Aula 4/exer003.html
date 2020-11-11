@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 001</title>
+</head>
+<body>
+    <h1>Olá mundo !</h1>
+    <h2>Aula 002</h2>
+    <p>Já me livrei da maldição ! </p>
+
+    <style>
+        body{
+            background-color: rgb(243, 236, 236);
+            
+            
+        }
+
+        h1{
+            color: blue;
+            font: normal 15pt Arial;  /* Isso é um cometário em css  */
+        }
+
+        p{
+            color: chartreuse;
+        }
+
+    </style>
+
+    <script>
+        //window.alert('Estou aprendendo JS ! ')
+        var nome = String(window.prompt('Digite seu nome : ')) //para converter um valor para string usamos o String na frente.
+        window.alert('Boa noite '+ nome)
+        var valor1 = Number(window.prompt('Digite um valor : ')) //para declarar uma variável como inteiro ou float usamos o mumber.parseInt ou number.parseFloat respectivamente
+        var valor2 = Number(window.prompt('Digite outro valor : ')) //para deixar que o JS reconheça automaticamente o tipo nós usamos o mumber sozinho
+        var soma = valor1 + valor2
+
+        window.alert(`A soma entre ${valor1} e ${valor2} é ${soma}`) //usamos a crase pra formatar valores.
+
+
+    </script>
+
+    
+
+
+</body>
+</html>
