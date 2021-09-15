@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <title>modelo</title>
+</head>
+<body>
+
+    <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="../img/computador.jpg"></a>
+        <a class="carousel-item" href="#two!"><img src="../img/login.png"></a>
+        <a class="carousel-item" href="#three!"><img src="../img/sapato-nike.jpeg"></a>
+    </div>
+
+
+  <!-- Dropdown Trigger -->
+  <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="#!">one</a></li>
+    <li><a href="#!">two</a></li>
+    <li class="divider" tabindex="-1"></li>
+    <li><a href="#!">three</a></li>
+    
+  </ul>
+        
+
+    <br>
+    <h1>Exemplo de acionameento de eventos.</h1>
+    <p> Clique aqui, para ver a data e a hora. <button onclick="document.getElementById('data').innerHTML = Date() ">CLIQUE AQUI.</button></p>
+<br>
+    <p><input type="text" name="" id="text" onchange="mudar()"> <button>Enviar</button></p>
+<br>
+
+<p>Botão para testar o addEventListener <button id="btn">addEventlistener</button></p>
+
+<br>
+
+<p id='data'></p>
+<p id="info"></p>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script src="exer01.js"></script>
+<script src="exer02.js"></script>
+<script src="exer03.js"></script>
+
+</body>
+</html>
+
