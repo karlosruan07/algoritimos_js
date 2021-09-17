@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template string !!</title>
+</head>
+<body>
+    <header><h1>Template string !</h1></header>
+    <main>
+
+        <div>
+            <p id="mostrar">texto teste !</p>
+        </div>
+
+        <script>
+            let header = `<h3>Minhas informações !</h3>`
+            let html = `${header}<ul>`//tem que fechar a tag
+
+            let info = ['Ruan', 22, 70.1]
+
+            for(let x=0; x < info.length; x++){
+                html += `<li>${info[x]}</li>`
+            }
+
+            html+= `</ul>`
+
+            let mostrar = document.getElementById('mostrar')
+            mostrar.innerHTML = html
+
+        </script>
+
+    </main>
+
+    <footer>&copy;karlosruan07</footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
